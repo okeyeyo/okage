@@ -1,43 +1,51 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header, footer {
+    padding: 10px 0;
+    color: black;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
     text-align: center;
+    position: relative; /* header를 기준으로 절대 위치 설정을 하기 위해 추가 */
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+footer {
+    margin-left: 10px;
 }
 
 main {
     padding: 20px;
 }
 
-footer {
+.toggle {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 30px;
+    position: absolute; /* 절대 위치 설정 */
+    top: 10px; /* 상단에서 10px 떨어짐 */
+    right: 10px; /* 우측에서 10px 떨어짐 */
+}
+
+.dark-mode {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #222;
+}
+
+.toggle.dark-mode {
+    background-color: rgba(0, 0, 0, 0);
 }

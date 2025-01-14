@@ -24,6 +24,10 @@ main {
   padding: 20px;
 }
 
+ol {
+  list-style-type: hangul;
+}
+
 .my_profile {
   height: 20%;
   width: 20%;

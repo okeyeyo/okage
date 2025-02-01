@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="키미녹양의 아주 초라한 포트폴리오 전시 웹페이지랍니다.."
-    />
+    <meta name="description" content="김인옥의 웹페이지랍니다.." />
     <meta name="keywords" content="HTML, CSS, JavaScript, web development" />
     <meta name="author" content="okayeyo" />
     <meta http-equiv="refresh" content="30" />
@@ -22,10 +19,17 @@
     <main>
       <section>
         <h2>안녕하세요</h2>
-        <p>보잘 것 없는 김인옥의 사이트입니다.</p>
+        <p>이것저것 기록일지</p>
       </section>
       <div>
-        <img class="my_profile" src="../okage/img/증명사진.jpeg" />
+        <!-- <img class="my_profile" src="/img/증명사진.jpeg" alt="증명사진" /> -->
+        <video
+          src="/mov/대만에서 인사.MOV"
+          autoplay
+          muted
+          height="300"
+        ></video>
+        <!--controls는 영상 조작 버튼 기능 추가-->
       </div>
       <div>
         <!-- 해당 아이디 태그로 이동 -->
@@ -39,6 +43,7 @@
       안드로이드 스튜디오를 통해 헬스케어 어플을 만들었음
       <h2 id="프로젝트">프로젝트</h2>
       여러 명이서 하는 프로젝트에 참여하여 커피 구독 서비스에서 프론트를 담당함
+      (퍼블리싱)
       <hr />
       <!--주제 전환 가로선-->
       <div>
@@ -46,11 +51,22 @@
         <ol>
           <!-- 순서 있는 태그로 <ul>은 순서가 없는 태그이다. 숫자 대신 불릿포인트로 카운팅 -->
           <li>
-            <a
+            <!-- <a
               href="https://www.youtube.com/watch?v=3VlqlntAOt8"
               target="_blank"
               >리도어 - 사랑의 미학</a
-            >
+            > -->
+            <p>리도어 - 사랑의 미학</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3VlqlntAOt8?si=JIuYDw1VQTmfX2f8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </li>
           <li>
             <a
